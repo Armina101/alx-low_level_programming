@@ -13,18 +13,18 @@ char *leet(char *n)
 	int upp_letters[] = {65, 69, 79, 84, 76};
 	int numbers[] = {52, 51, 48, 55, 49};
 
-	while (*(s + count) != '\0')
+	while (*(n + count) != '\0')
 	{
 		for (i = 0; i < 5; i++)
 		{
-			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
+			if (*(n + count) == low_letters[i] || *(n + count) == upp_letters[i])
 			{
-				*(s + count) = numbers[i];
+				*(n + count) = numbers[i];
 				break;
 			}
 		}
 		count++;
 	}
 
-	return (s);
+	return (n);
 }
