@@ -9,7 +9,7 @@
  * @argv: Array arguments
  * Return: 0 and 1
  */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int a, b, result;
 	int coins[] = {25, 10, 5, 2, 1};
