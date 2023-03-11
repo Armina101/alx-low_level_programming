@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	a = _atoi(argv[1]);
+	a = atoi(argv[1]);
 
 	result = 0;
 
