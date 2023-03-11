@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 			return (0);
 		}
 
-		sum = sum + atoi(argv[i]);
+		sum = sum + _atoi(argv[i]);
 		i++;
 	}
 
