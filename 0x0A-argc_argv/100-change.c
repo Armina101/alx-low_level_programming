@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	a = atoi(argv[1]);
+	a = _atoi(argv[1]);
 
 	result = 0;
 
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (b = 0; b < 5 && b >= 0; b++)
+	for (b = 0; b < 5 && a >= 0; b++)
 	{
 		while (a >= coins[b])
 		{
