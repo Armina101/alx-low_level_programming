@@ -16,7 +16,7 @@ int word_count(char *s)
 
 	for (a = 0; s[a] != '\0'; a++)
 	{
-		if (s[a] == '')
+		if (s[a] == ' ')
 			i = 0;
 		else if (i == 0)
 		{
@@ -37,21 +37,22 @@ int word_count(char *s)
 char **strtow(char *str)
 {
 	char **matrix, *tmp;
-	int a, b = 0, n = 0, word, c = 0, start, finish;
+	int a, b = 0, n = 0, words, c = 0, start, finish;
 
 	while (*(str + n))
 		n++;
-	word = word_count(str);
-	if (word == 0)
+	words = word_count(str);
+	if (words == 0)
 		return (NULL);
 
-	matrix = (char **) malloc(sizeof(char *) * (word + 1));
+	matrix = (char **) malloc(sizeof(char *) * (words + 1));
 
 	if (matrix == NULL)
 		return (NULL);
+
 	for (a = 0; a <= n; a++)
 	{
-		if (str[a] == '' || str[a] == '\0')
+		if (str[a] == ' ' || str[a] == '\0')
 		{
 			if (c)
 			{
