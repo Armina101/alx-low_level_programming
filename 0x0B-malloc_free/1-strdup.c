@@ -30,5 +30,6 @@ char *_strdup(char *str)
 
 	while ((duplicate[a] = str[a] != '\0'))
 		a++;
+
 	return (duplicate);
 }
