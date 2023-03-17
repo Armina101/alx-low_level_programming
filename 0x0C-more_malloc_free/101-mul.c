@@ -1,4 +1,5 @@
 #include "main.h"
+#define ERR_MSG "Error"
 /**
  * _isdigit - checks if digits are 0 to 9
  * @c: char to be checked
@@ -20,10 +21,9 @@ int _strlen(char *s)
 {
 	int longi = 0;
 
-	while (*s != '\0')
+	while (s[longi] != '\0')
 	{
 		longi++;
-		s++;
 	}
 	return (longi);
 }
