@@ -4,7 +4,6 @@
 
 /**
  * print_all - prints anything
- * @char: string
  * @format: a list of types of arguments passed to the function
  * Return: void
  */
