@@ -13,7 +13,7 @@
  * if filename is NULL return -1
  */
 
-int create_file(const char *filename, char *text_content);
+int create_file(const char *filename, char *text_content)
 {
 	int file_desc, n, file_write;
 
@@ -22,7 +22,7 @@ int create_file(const char *filename, char *text_content);
 	if (!filename)
 		return (-1);
 
-	file_desc = open(filename, 0_WRONLY | 0_CREAT | 0_TRUNC, 0600);
+	file_desc = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 
 	if (file_desc < 0)
 		return (-1);
