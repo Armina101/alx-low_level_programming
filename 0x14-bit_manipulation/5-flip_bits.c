@@ -13,5 +13,17 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
+	unsigned long int num_flip = n ^ m;
+	unsigned int a;
 
+	a = 0;
+
+	while (num_flip > 0)
+	{
+		if ((num_flip & 1) == 1)
+			a++;
+		num_flip >>= 1;
+	}
+
+	return (a);
 }
